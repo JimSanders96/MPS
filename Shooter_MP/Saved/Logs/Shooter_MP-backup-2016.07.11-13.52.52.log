@@ -1,0 +1,659 @@
+﻿Log file open, 07/11/16 13:52:07
+LogInit:Display: Running engine for game: Shooter_MP
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(900820068) SRandInit(900820069).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.062675
+LogInit: Version: 4.12.5-3039270+++UE4+Release-4.12
+LogInit: API Version: 2992821
+LogInit: Net Version: 3039270
+LogDevObjectVersion: Number of dev versions registered: 13
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 3
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 1
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 2
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 6
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 2
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 0
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogInit: Compiled (64-bit): Jul  6 2016 09:09:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.12
+LogInit: Command line:  -game
+LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.12/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.07.11-11.52.07:134][  0]LogInit: Selected Device Profile: [Windows]
+[2016.07.11-11.52.07:134][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.07.11-11.52.07:142][  0]LogInit: Computer: ARCADE1
+[2016.07.11-11.52.07:142][  0]LogInit: User: enversed
+[2016.07.11-11.52.07:142][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.07.11-11.52.07:142][  0]LogInit: High frequency timer resolution =3.914059 MHz
+[2016.07.11-11.52.07:142][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2016.07.11-11.52.07:142][  0]LogMemory: Platform Memory Stats for Windows
+[2016.07.11-11.52.07:142][  0]LogMemory: Process Physical Memory: 190.87 MB used, 190.87 MB peak
+[2016.07.11-11.52.07:142][  0]LogMemory: Process Virtual Memory: 195.04 MB used, 195.04 MB peak
+[2016.07.11-11.52.07:142][  0]LogMemory: Physical Memory: 4444.20 MB used, 16299.06 MB total
+[2016.07.11-11.52.07:142][  0]LogMemory: Virtual Memory: 554.25 MB used, 134217728.00 MB total
+[2016.07.11-11.52.07:163][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.07.11-11.52.07:425][  0]LogD3D11RHI: D3D11 adapters:
+[2016.07.11-11.52.07:444][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1080' (Feature Level 11_0)
+[2016.07.11-11.52.07:444][  0]LogD3D11RHI:       8084/0/8149 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2016.07.11-11.52.07:445][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.07.11-11.52.07:445][  0]LogD3D11RHI:       0/0/8149 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2016.07.11-11.52.07:445][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.07.11-11.52.07:448][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.07.11-11.52.07:448][  0]LogD3D11RHI:     GPU DeviceId: 0x1b80 (for the marketing name, search the web for "GPU Device Id")
+[2016.07.11-11.52.07:448][  0]LogWindows: EnumDisplayDevices:
+[2016.07.11-11.52.07:448][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1080' (P:1 D:1)
+[2016.07.11-11.52.07:448][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1080' (P:0 D:0)
+[2016.07.11-11.52.07:448][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1080' (P:0 D:0)
+[2016.07.11-11.52.07:449][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1080' (P:0 D:0)
+[2016.07.11-11.52.07:449][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2016.07.11-11.52.07:449][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1080
+[2016.07.11-11.52.07:449][  0]LogD3D11RHI:   Driver Version: 368.39 (internal:10.18.13.6839, unified:368.39)
+[2016.07.11-11.52.07:449][  0]LogD3D11RHI:      Driver Date: 6-2-2016
+[2016.07.11-11.52.07:449][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.07.11-11.52.07:460][  0]LogD3D11RHI: Async texture creation enabled
+[2016.07.11-11.52.07:468][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2016.07.11-11.52.07:469][  0]LogShaderCompilers: Guid format shader working directory is -15 characters bigger than the processId version (../../../../../../Users/enversed/Documents/GitHub/MPS/Shooter_MP/Intermediate/Shaders/WorkingDirectory/8116/).
+[2016.07.11-11.52.07:469][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/enversed/AppData/Local/Temp/UnrealShaderWorkingDir/6A7801BD44884B60BAC6408919213148/'.
+[2016.07.11-11.52.07:469][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.07.11-11.52.08:108][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.07.11-11.52.08:114][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.07.11-11.52.08:120][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.07.11-11.52.08:126][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.07.11-11.52.08:126][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.07.11-11.52.08:169][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.07.11-11.52.08:204][  0]LogDerivedDataCache: Loaded boot cache 0.03s 48MB C:/Users/enversed/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.07.11-11.52.08:204][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/enversed/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2016.07.11-11.52.08:204][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/enversed/Documents/GitHub/MPS/Shooter_MP/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.07.11-11.52.08:204][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.07.11-11.52.08:204][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/enversed/Documents/GitHub/MPS/Shooter_MP/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.07.11-11.52.08:204][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.07.11-11.52.08:216][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.07.11-11.52.08:227][  0]LogDerivedDataCache: Using Local data cache path C:/Users/enversed/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.07.11-11.52.08:344][  0]LogAssetRegistry: FAssetRegistry took 0.0001 seconds to start up
+[2016.07.11-11.52.08:357][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.013407 seconds
+[2016.07.11-11.52.08:360][  0]LogInit: Selected Device Profile: [Windows]
+[2016.07.11-11.52.08:360][  0]LogContentStreaming: Texture pool size is 1000.00 MB
+[2016.07.11-11.52.08:453][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.07.11-11.52.08:453][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.07.11-11.52.08:453][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.07.11-11.52.08:580][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.07.11-11.52.08:672][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.07.11-11.52.08:672][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.07.11-11.52.08:711][  0]LogMoviePlayer: Initializing movie player
+[2016.07.11-11.52.08:778][  0]LogWindowsMoviePlayer: Unable to load movie: ../../../../../../Users/enversed/Documents/GitHub/MPS/Shooter_MP/Content/Movies/Default_Startup.mp4
+[2016.07.11-11.52.08:838][  0]SourceControl: Info Source control is disabled
+[2016.07.11-11.52.08:838][  0]SourceControl: Info Source control is disabled
+[2016.07.11-11.52.08:842][  0]SourceControl: Info Source control is disabled
+[2016.07.11-11.52.08:899][  0]LogUObjectArray: 30985 objects as part of root set at end of initial load.
+[2016.07.11-11.52.08:899][  0]LogUObjectAllocator: 6717232 out of 0 bytes used by permanent object pool.
+[2016.07.11-11.52.08:899][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.07.11-11.52.08:936][  0]LogEngine: Initializing Engine...
+[2016.07.11-11.52.08:948][  0]LogHMD: SteamVR initialized.  Driver: lighthouse  Display: LHR-7C3980D9
+[2016.07.11-11.52.08:961][  0]LogHMD: SteamVR initialized.  Driver: lighthouse  Display: LHR-7C3980D9
+[2016.07.11-11.52.09:054][  0]LogInit: XAudio2 using 'Speakers (3- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.07.11-11.52.09:059][  0]LogInit: FAudioDevice initialized.
+[2016.07.11-11.52.09:077][  0]LogDerivedDataCache: Saved boot cache 0.02s 48MB C:/Users/enversed/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.07.11-11.52.09:083][  0]LogInit: Texture streaming: Enabled
+[2016.07.11-11.52.09:128][  0]LogConsoleManager:Warning: Setting the console variable 'r.VSync' with 'SetByGameSetting' was ignored as it is lower priority than the previous 'SetByCode'
+[2016.07.11-11.52.09:130][  0]LogNet: Browse: /Game/Levels/Menu?Name=Player
+[2016.07.11-11.52.09:130][  0]LogLoad: LoadMap: /Game/Levels/Menu?Name=Player
+[2016.07.11-11.52.09:141][  0]LogMemory: Platform Memory Stats for Windows
+[2016.07.11-11.52.09:141][  0]LogMemory: Process Physical Memory: 551.66 MB used, 570.46 MB peak
+[2016.07.11-11.52.09:141][  0]LogMemory: Process Virtual Memory: 609.40 MB used, 609.41 MB peak
+[2016.07.11-11.52.09:141][  0]LogMemory: Physical Memory: 4860.94 MB used, 16299.06 MB total
+[2016.07.11-11.52.09:141][  0]LogMemory: Virtual Memory: 1218.90 MB used, 134217728.00 MB total
+[2016.07.11-11.52.09:141][  0]LogMemory: 
+[2016.07.11-11.52.09:141][  0]Allocator Stats for TBB: (not implemented)
+[2016.07.11-11.52.09:160][  0]LogAIModule: Creating AISystem for world Menu
+[2016.07.11-11.52.09:189][  0]LogWorld: Game class is 'GM_MPShooter_C'
+[2016.07.11-11.52.09:190][  0]LogWorld: Bringing World /Game/Levels/Menu.Menu up for play (max tick rate 0) at 2016.07.11-13.52.09
+[2016.07.11-11.52.09:191][  0]LogWorld: Bringing up level for play took: 0.001241
+[2016.07.11-11.52.09:191][  0]LogBlueprintUserMessages: [GM_MPShooter_C_0] Player joined
+[2016.07.11-11.52.09:192][  0]LogLoad: Took 0.061006 seconds to LoadMap(/Game/Levels/Menu)
+[2016.07.11-11.52.09:192][  0]LogInit:Display: Game Engine Initialized.
+[2016.07.11-11.52.09:406][  0]LogLoad: Full Startup: 2.76 seconds (BP compile: 0.02 seconds)
+[2016.07.11-11.52.09:406][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.07.11-11.52.09:406][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.07.11-11.52.09:423][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.07.11-11.52.09:423][  0]LogOcInput: OculusInput pre-init called
+[2016.07.11-11.52.09:493][  2]LogRenderer: Reallocating scene render targets to support 2688x1512 (Frame:2).
+[2016.07.11-11.52.14:911][336]LogBlueprintUserMessages: [Menu_C_1] Now listening
+[2016.07.11-11.52.14:914][337]LogNet: Browse: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.14:914][337]LogLoad: LoadMap: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.14:927][337]LogMemory: Platform Memory Stats for Windows
+[2016.07.11-11.52.14:927][337]LogMemory: Process Physical Memory: 585.80 MB used, 585.80 MB peak
+[2016.07.11-11.52.14:927][337]LogMemory: Process Virtual Memory: 1135.54 MB used, 1136.31 MB peak
+[2016.07.11-11.52.14:927][337]LogMemory: Physical Memory: 4867.66 MB used, 16299.06 MB total
+[2016.07.11-11.52.14:927][337]LogMemory: Virtual Memory: 1758.29 MB used, 134217728.00 MB total
+[2016.07.11-11.52.14:927][337]LogMemory: 
+[2016.07.11-11.52.14:927][337]Allocator Stats for TBB: (not implemented)
+[2016.07.11-11.52.14:939][337]LogAIModule: Creating AISystem for world Menu
+[2016.07.11-11.52.14:967][337]LogWorld: Game class is 'GM_MPShooter_C'
+[2016.07.11-11.52.14:967][337]LogInit: WinSock: Socket queue 131072 / 131072
+[2016.07.11-11.52.14:969][337]LogInit: WinSock: I am arcade1 (192.168.1.140:0)
+[2016.07.11-11.52.14:969][337]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2016.07.11-11.52.14:969][337]LogNet: GameNetDriver IpNetDriver_0 IpNetDriver listening on port 7777
+[2016.07.11-11.52.14:970][337]LogWorld: Bringing World /Game/Levels/Menu.Menu up for play (max tick rate 0) at 2016.07.11-13.52.14
+[2016.07.11-11.52.14:971][337]LogWorld: Bringing up level for play took: 0.000828
+[2016.07.11-11.52.14:971][337]LogBlueprintUserMessages: [GM_MPShooter_C_0] Player joined
+[2016.07.11-11.52.14:972][337]LogLoad: Took 0.056693 seconds to LoadMap(/Game/Levels/Menu)
+[2016.07.11-11.52.28:684][188]LogNet: NotifyAcceptingConnection: Server Menu accept
+[2016.07.11-11.52.28:684][188]LogHandshake: SendConnectChallenge. Timestamp: 13.785938, Cookie: 211123015054145223031161047052037060226122098170084074011011
+[2016.07.11-11.52.28:684][188]LogNet: NotifyAcceptingConnection: Server Menu accept
+[2016.07.11-11.52.28:716][190]LogNet: NotifyAcceptingConnection: Server Menu accept
+[2016.07.11-11.52.28:716][190]LogNet: Server accepting post-challenge connection from: 192.168.1.128:63176
+[2016.07.11-11.52.28:716][190]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2016.07.11-11.52.28:716][190]LogNet: NotifyAcceptedConnection: Name: Menu, TimeStamp: 07/11/16 13:52:28, [UNetConnection] RemoteAddr: 192.168.1.128:63176, Name: IpConnection_0, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: NULL, Owner: NULL
+[2016.07.11-11.52.28:716][190]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 192.168.1.128:63176, Name: IpConnection_0, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: NULL, Owner: NULL
+[2016.07.11-11.52.28:910][202]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Levels/Menu.Menu: Accepted
+[2016.07.11-11.52.28:910][202]LogNet: Remote platform little endian=1
+[2016.07.11-11.52.28:910][202]LogNet: This platform little endian=1
+[2016.07.11-11.52.28:910][202]LogNet: GetLocalNetworkVersion: GEngineNetVersion: 3039270, ProjectName: shooter_mp, ProjectVersion: 1.0.0.0, InternalProtocolVersion: 9, LocalNetworkVersion: 1397182541
+[2016.07.11-11.52.28:910][202]LogNet: NotifyControlMessage: Client connecting with invalid version. LocalNetworkVersion: 1397182541, RemoteNetworkVersion: 894313053
+[2016.07.11-11.52.28:910][202]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 192.168.1.128:63176, Name: IpConnection_0, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: NULL, Owner: NULL, Channels: 2, Time: 2016.07.11-11.52.28
+[2016.07.11-11.52.28:910][202]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 192.168.1.128:63176, Name: IpConnection_0, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: NULL, Owner: NULL
+[2016.07.11-11.52.28:942][204]LogNet: NotifyAcceptingConnection: Server Menu accept
+[2016.07.11-11.52.37:491][734]LogBlueprintUserMessages: [Menu_C_1] Now listening
+[2016.07.11-11.52.37:507][735]LogNet: Browse: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.37:507][735]LogLoad: LoadMap: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.37:507][735]LogNet: World NetDriver shutdown IpNetDriver_0 [GameNetDriver]
+[2016.07.11-11.52.37:507][735]LogNet: DestroyNamedNetDriver IpNetDriver_0 [GameNetDriver]
+[2016.07.11-11.52.37:507][735]LogExit: GameNetDriver IpNetDriver_0 shut down
+[2016.07.11-11.52.37:520][735]LogMemory: Platform Memory Stats for Windows
+[2016.07.11-11.52.37:520][735]LogMemory: Process Physical Memory: 570.00 MB used, 587.46 MB peak
+[2016.07.11-11.52.37:520][735]LogMemory: Process Virtual Memory: 1128.71 MB used, 1226.00 MB peak
+[2016.07.11-11.52.37:520][735]LogMemory: Physical Memory: 4828.31 MB used, 16299.06 MB total
+[2016.07.11-11.52.37:520][735]LogMemory: Virtual Memory: 1794.30 MB used, 134217728.00 MB total
+[2016.07.11-11.52.37:520][735]LogMemory: 
+[2016.07.11-11.52.37:520][735]Allocator Stats for TBB: (not implemented)
+[2016.07.11-11.52.37:532][735]LogAIModule: Creating AISystem for world Menu
+[2016.07.11-11.52.37:560][735]LogWorld: Game class is 'GM_MPShooter_C'
+[2016.07.11-11.52.37:560][735]LogInit: WinSock: Socket queue 131072 / 131072
+[2016.07.11-11.52.37:560][735]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2016.07.11-11.52.37:560][735]LogNet: GameNetDriver IpNetDriver_1 IpNetDriver listening on port 7777
+[2016.07.11-11.52.37:561][735]LogWorld: Bringing World /Game/Levels/Menu.Menu up for play (max tick rate 0) at 2016.07.11-13.52.37
+[2016.07.11-11.52.37:562][735]LogWorld: Bringing up level for play took: 0.000754
+[2016.07.11-11.52.37:562][735]LogBlueprintUserMessages: [GM_MPShooter_C_0] Player joined
+[2016.07.11-11.52.37:562][735]LogLoad: Took 0.055356 seconds to LoadMap(/Game/Levels/Menu)
+[2016.07.11-11.52.41:515][981]LogBlueprintUserMessages: [Menu_C_1] Now listening
+[2016.07.11-11.52.41:531][982]LogNet: Browse: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.41:531][982]LogLoad: LoadMap: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.41:531][982]LogNet: World NetDriver shutdown IpNetDriver_1 [GameNetDriver]
+[2016.07.11-11.52.41:531][982]LogNet: DestroyNamedNetDriver IpNetDriver_1 [GameNetDriver]
+[2016.07.11-11.52.41:531][982]LogExit: GameNetDriver IpNetDriver_1 shut down
+[2016.07.11-11.52.41:543][982]LogMemory: Platform Memory Stats for Windows
+[2016.07.11-11.52.41:543][982]LogMemory: Process Physical Memory: 566.49 MB used, 587.46 MB peak
+[2016.07.11-11.52.41:543][982]LogMemory: Process Virtual Memory: 1128.54 MB used, 1226.00 MB peak
+[2016.07.11-11.52.41:543][982]LogMemory: Physical Memory: 4824.98 MB used, 16299.06 MB total
+[2016.07.11-11.52.41:543][982]LogMemory: Virtual Memory: 1754.30 MB used, 134217728.00 MB total
+[2016.07.11-11.52.41:543][982]LogMemory: 
+[2016.07.11-11.52.41:543][982]Allocator Stats for TBB: (not implemented)
+[2016.07.11-11.52.41:555][982]LogAIModule: Creating AISystem for world Menu
+[2016.07.11-11.52.41:582][982]LogWorld: Game class is 'GM_MPShooter_C'
+[2016.07.11-11.52.41:583][982]LogInit: WinSock: Socket queue 131072 / 131072
+[2016.07.11-11.52.41:583][982]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2016.07.11-11.52.41:583][982]LogNet: GameNetDriver IpNetDriver_2 IpNetDriver listening on port 7777
+[2016.07.11-11.52.41:584][982]LogWorld: Bringing World /Game/Levels/Menu.Menu up for play (max tick rate 0) at 2016.07.11-13.52.41
+[2016.07.11-11.52.41:584][982]LogWorld: Bringing up level for play took: 0.000738
+[2016.07.11-11.52.41:584][982]LogBlueprintUserMessages: [GM_MPShooter_C_0] Player joined
+[2016.07.11-11.52.41:585][982]LogLoad: Took 0.053396 seconds to LoadMap(/Game/Levels/Menu)
+[2016.07.11-11.52.42:328][ 29]LogBlueprintUserMessages: [Menu_C_1] Now listening
+[2016.07.11-11.52.42:344][ 30]LogNet: Browse: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.42:344][ 30]LogLoad: LoadMap: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.42:344][ 30]LogNet: World NetDriver shutdown IpNetDriver_2 [GameNetDriver]
+[2016.07.11-11.52.42:344][ 30]LogNet: DestroyNamedNetDriver IpNetDriver_2 [GameNetDriver]
+[2016.07.11-11.52.42:344][ 30]LogExit: GameNetDriver IpNetDriver_2 shut down
+[2016.07.11-11.52.42:356][ 30]LogMemory: Platform Memory Stats for Windows
+[2016.07.11-11.52.42:356][ 30]LogMemory: Process Physical Memory: 566.80 MB used, 587.46 MB peak
+[2016.07.11-11.52.42:356][ 30]LogMemory: Process Virtual Memory: 1222.46 MB used, 1226.00 MB peak
+[2016.07.11-11.52.42:356][ 30]LogMemory: Physical Memory: 4824.98 MB used, 16299.06 MB total
+[2016.07.11-11.52.42:356][ 30]LogMemory: Virtual Memory: 1865.80 MB used, 134217728.00 MB total
+[2016.07.11-11.52.42:356][ 30]LogMemory: 
+[2016.07.11-11.52.42:356][ 30]Allocator Stats for TBB: (not implemented)
+[2016.07.11-11.52.42:368][ 30]LogAIModule: Creating AISystem for world Menu
+[2016.07.11-11.52.42:395][ 30]LogWorld: Game class is 'GM_MPShooter_C'
+[2016.07.11-11.52.42:395][ 30]LogInit: WinSock: Socket queue 131072 / 131072
+[2016.07.11-11.52.42:395][ 30]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2016.07.11-11.52.42:395][ 30]LogNet: GameNetDriver IpNetDriver_3 IpNetDriver listening on port 7777
+[2016.07.11-11.52.42:396][ 30]LogWorld: Bringing World /Game/Levels/Menu.Menu up for play (max tick rate 0) at 2016.07.11-13.52.42
+[2016.07.11-11.52.42:397][ 30]LogWorld: Bringing up level for play took: 0.000761
+[2016.07.11-11.52.42:397][ 30]LogBlueprintUserMessages: [GM_MPShooter_C_0] Player joined
+[2016.07.11-11.52.42:397][ 30]LogLoad: Took 0.053369 seconds to LoadMap(/Game/Levels/Menu)
+[2016.07.11-11.52.42:608][ 44]LogBlueprintUserMessages: [Menu_C_1] Now listening
+[2016.07.11-11.52.42:624][ 45]LogNet: Browse: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.42:624][ 45]LogLoad: LoadMap: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.42:624][ 45]LogNet: World NetDriver shutdown IpNetDriver_3 [GameNetDriver]
+[2016.07.11-11.52.42:624][ 45]LogNet: DestroyNamedNetDriver IpNetDriver_3 [GameNetDriver]
+[2016.07.11-11.52.42:625][ 45]LogExit: GameNetDriver IpNetDriver_3 shut down
+[2016.07.11-11.52.42:637][ 45]LogMemory: Platform Memory Stats for Windows
+[2016.07.11-11.52.42:637][ 45]LogMemory: Process Physical Memory: 567.14 MB used, 587.46 MB peak
+[2016.07.11-11.52.42:637][ 45]LogMemory: Process Virtual Memory: 1254.28 MB used, 1254.28 MB peak
+[2016.07.11-11.52.42:637][ 45]LogMemory: Physical Memory: 4825.38 MB used, 16299.06 MB total
+[2016.07.11-11.52.42:637][ 45]LogMemory: Virtual Memory: 1897.30 MB used, 134217728.00 MB total
+[2016.07.11-11.52.42:637][ 45]LogMemory: 
+[2016.07.11-11.52.42:637][ 45]Allocator Stats for TBB: (not implemented)
+[2016.07.11-11.52.42:649][ 45]LogAIModule: Creating AISystem for world Menu
+[2016.07.11-11.52.42:677][ 45]LogWorld: Game class is 'GM_MPShooter_C'
+[2016.07.11-11.52.42:677][ 45]LogInit: WinSock: Socket queue 131072 / 131072
+[2016.07.11-11.52.42:678][ 45]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2016.07.11-11.52.42:678][ 45]LogNet: GameNetDriver IpNetDriver_4 IpNetDriver listening on port 7777
+[2016.07.11-11.52.42:679][ 45]LogWorld: Bringing World /Game/Levels/Menu.Menu up for play (max tick rate 0) at 2016.07.11-13.52.42
+[2016.07.11-11.52.42:679][ 45]LogWorld: Bringing up level for play took: 0.000775
+[2016.07.11-11.52.42:679][ 45]LogBlueprintUserMessages: [GM_MPShooter_C_0] Player joined
+[2016.07.11-11.52.42:680][ 45]LogLoad: Took 0.055116 seconds to LoadMap(/Game/Levels/Menu)
+[2016.07.11-11.52.42:810][ 54]LogBlueprintUserMessages: [Menu_C_1] Now listening
+[2016.07.11-11.52.42:826][ 55]LogNet: Browse: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.42:836][ 55]LogLoad: LoadMap: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.42:836][ 55]LogNet: World NetDriver shutdown IpNetDriver_4 [GameNetDriver]
+[2016.07.11-11.52.42:836][ 55]LogNet: DestroyNamedNetDriver IpNetDriver_4 [GameNetDriver]
+[2016.07.11-11.52.42:836][ 55]LogExit: GameNetDriver IpNetDriver_4 shut down
+[2016.07.11-11.52.42:849][ 55]LogMemory: Platform Memory Stats for Windows
+[2016.07.11-11.52.42:849][ 55]LogMemory: Process Physical Memory: 567.47 MB used, 587.46 MB peak
+[2016.07.11-11.52.42:849][ 55]LogMemory: Process Virtual Memory: 1254.41 MB used, 1254.41 MB peak
+[2016.07.11-11.52.42:849][ 55]LogMemory: Physical Memory: 4825.35 MB used, 16299.06 MB total
+[2016.07.11-11.52.42:849][ 55]LogMemory: Virtual Memory: 1897.30 MB used, 134217728.00 MB total
+[2016.07.11-11.52.42:849][ 55]LogMemory: 
+[2016.07.11-11.52.42:849][ 55]Allocator Stats for TBB: (not implemented)
+[2016.07.11-11.52.42:861][ 55]LogAIModule: Creating AISystem for world Menu
+[2016.07.11-11.52.42:890][ 55]LogWorld: Game class is 'GM_MPShooter_C'
+[2016.07.11-11.52.42:890][ 55]LogInit: WinSock: Socket queue 131072 / 131072
+[2016.07.11-11.52.42:890][ 55]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2016.07.11-11.52.42:890][ 55]LogNet: GameNetDriver IpNetDriver_5 IpNetDriver listening on port 7777
+[2016.07.11-11.52.42:892][ 55]LogWorld: Bringing World /Game/Levels/Menu.Menu up for play (max tick rate 0) at 2016.07.11-13.52.42
+[2016.07.11-11.52.42:892][ 55]LogWorld: Bringing up level for play took: 0.000770
+[2016.07.11-11.52.42:892][ 55]LogBlueprintUserMessages: [GM_MPShooter_C_0] Player joined
+[2016.07.11-11.52.42:893][ 55]LogLoad: Took 0.056263 seconds to LoadMap(/Game/Levels/Menu)
+[2016.07.11-11.52.43:007][ 63]LogBlueprintUserMessages: [Menu_C_1] Now listening
+[2016.07.11-11.52.43:023][ 64]LogNet: Browse: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.43:033][ 64]LogLoad: LoadMap: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.43:033][ 64]LogNet: World NetDriver shutdown IpNetDriver_5 [GameNetDriver]
+[2016.07.11-11.52.43:033][ 64]LogNet: DestroyNamedNetDriver IpNetDriver_5 [GameNetDriver]
+[2016.07.11-11.52.43:033][ 64]LogExit: GameNetDriver IpNetDriver_5 shut down
+[2016.07.11-11.52.43:047][ 64]LogMemory: Platform Memory Stats for Windows
+[2016.07.11-11.52.43:047][ 64]LogMemory: Process Physical Memory: 567.48 MB used, 587.46 MB peak
+[2016.07.11-11.52.43:047][ 64]LogMemory: Process Virtual Memory: 1254.41 MB used, 1254.41 MB peak
+[2016.07.11-11.52.43:047][ 64]LogMemory: Physical Memory: 4825.39 MB used, 16299.06 MB total
+[2016.07.11-11.52.43:047][ 64]LogMemory: Virtual Memory: 1897.30 MB used, 134217728.00 MB total
+[2016.07.11-11.52.43:047][ 64]LogMemory: 
+[2016.07.11-11.52.43:047][ 64]Allocator Stats for TBB: (not implemented)
+[2016.07.11-11.52.43:058][ 64]LogAIModule: Creating AISystem for world Menu
+[2016.07.11-11.52.43:086][ 64]LogWorld: Game class is 'GM_MPShooter_C'
+[2016.07.11-11.52.43:087][ 64]LogInit: WinSock: Socket queue 131072 / 131072
+[2016.07.11-11.52.43:087][ 64]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2016.07.11-11.52.43:087][ 64]LogNet: GameNetDriver IpNetDriver_6 IpNetDriver listening on port 7777
+[2016.07.11-11.52.43:088][ 64]LogWorld: Bringing World /Game/Levels/Menu.Menu up for play (max tick rate 0) at 2016.07.11-13.52.43
+[2016.07.11-11.52.43:089][ 64]LogWorld: Bringing up level for play took: 0.000796
+[2016.07.11-11.52.43:089][ 64]LogBlueprintUserMessages: [GM_MPShooter_C_0] Player joined
+[2016.07.11-11.52.43:089][ 64]LogLoad: Took 0.056067 seconds to LoadMap(/Game/Levels/Menu)
+[2016.07.11-11.52.43:155][ 69]LogBlueprintUserMessages: [Menu_C_1] Now listening
+[2016.07.11-11.52.43:171][ 70]LogNet: Browse: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.43:192][ 70]LogLoad: LoadMap: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.43:192][ 70]LogNet: World NetDriver shutdown IpNetDriver_6 [GameNetDriver]
+[2016.07.11-11.52.43:192][ 70]LogNet: DestroyNamedNetDriver IpNetDriver_6 [GameNetDriver]
+[2016.07.11-11.52.43:192][ 70]LogExit: GameNetDriver IpNetDriver_6 shut down
+[2016.07.11-11.52.43:205][ 70]LogMemory: Platform Memory Stats for Windows
+[2016.07.11-11.52.43:205][ 70]LogMemory: Process Physical Memory: 567.53 MB used, 587.46 MB peak
+[2016.07.11-11.52.43:205][ 70]LogMemory: Process Virtual Memory: 1254.41 MB used, 1254.41 MB peak
+[2016.07.11-11.52.43:205][ 70]LogMemory: Physical Memory: 4825.34 MB used, 16299.06 MB total
+[2016.07.11-11.52.43:205][ 70]LogMemory: Virtual Memory: 1897.30 MB used, 134217728.00 MB total
+[2016.07.11-11.52.43:205][ 70]LogMemory: 
+[2016.07.11-11.52.43:205][ 70]Allocator Stats for TBB: (not implemented)
+[2016.07.11-11.52.43:216][ 70]LogAIModule: Creating AISystem for world Menu
+[2016.07.11-11.52.43:245][ 70]LogWorld: Game class is 'GM_MPShooter_C'
+[2016.07.11-11.52.43:245][ 70]LogInit: WinSock: Socket queue 131072 / 131072
+[2016.07.11-11.52.43:245][ 70]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2016.07.11-11.52.43:245][ 70]LogNet: GameNetDriver IpNetDriver_7 IpNetDriver listening on port 7777
+[2016.07.11-11.52.43:246][ 70]LogWorld: Bringing World /Game/Levels/Menu.Menu up for play (max tick rate 0) at 2016.07.11-13.52.43
+[2016.07.11-11.52.43:246][ 70]LogWorld: Bringing up level for play took: 0.000782
+[2016.07.11-11.52.43:246][ 70]LogBlueprintUserMessages: [GM_MPShooter_C_0] Player joined
+[2016.07.11-11.52.43:247][ 70]LogLoad: Took 0.054988 seconds to LoadMap(/Game/Levels/Menu)
+[2016.07.11-11.52.43:297][ 74]LogBlueprintUserMessages: [Menu_C_1] Now listening
+[2016.07.11-11.52.43:313][ 75]LogNet: Browse: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.43:333][ 75]LogLoad: LoadMap: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.43:333][ 75]LogNet: World NetDriver shutdown IpNetDriver_7 [GameNetDriver]
+[2016.07.11-11.52.43:333][ 75]LogNet: DestroyNamedNetDriver IpNetDriver_7 [GameNetDriver]
+[2016.07.11-11.52.43:333][ 75]LogExit: GameNetDriver IpNetDriver_7 shut down
+[2016.07.11-11.52.43:345][ 75]LogMemory: Platform Memory Stats for Windows
+[2016.07.11-11.52.43:345][ 75]LogMemory: Process Physical Memory: 567.76 MB used, 587.46 MB peak
+[2016.07.11-11.52.43:345][ 75]LogMemory: Process Virtual Memory: 1254.67 MB used, 1254.67 MB peak
+[2016.07.11-11.52.43:345][ 75]LogMemory: Physical Memory: 4825.34 MB used, 16299.06 MB total
+[2016.07.11-11.52.43:345][ 75]LogMemory: Virtual Memory: 1897.30 MB used, 134217728.00 MB total
+[2016.07.11-11.52.43:345][ 75]LogMemory: 
+[2016.07.11-11.52.43:345][ 75]Allocator Stats for TBB: (not implemented)
+[2016.07.11-11.52.43:357][ 75]LogAIModule: Creating AISystem for world Menu
+[2016.07.11-11.52.43:385][ 75]LogWorld: Game class is 'GM_MPShooter_C'
+[2016.07.11-11.52.43:385][ 75]LogInit: WinSock: Socket queue 131072 / 131072
+[2016.07.11-11.52.43:386][ 75]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2016.07.11-11.52.43:386][ 75]LogNet: GameNetDriver IpNetDriver_8 IpNetDriver listening on port 7777
+[2016.07.11-11.52.43:387][ 75]LogWorld: Bringing World /Game/Levels/Menu.Menu up for play (max tick rate 0) at 2016.07.11-13.52.43
+[2016.07.11-11.52.43:387][ 75]LogWorld: Bringing up level for play took: 0.000766
+[2016.07.11-11.52.43:387][ 75]LogBlueprintUserMessages: [GM_MPShooter_C_0] Player joined
+[2016.07.11-11.52.43:388][ 75]LogLoad: Took 0.054919 seconds to LoadMap(/Game/Levels/Menu)
+[2016.07.11-11.52.43:438][ 79]LogBlueprintUserMessages: [Menu_C_1] Now listening
+[2016.07.11-11.52.43:454][ 80]LogNet: Browse: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.43:475][ 80]LogLoad: LoadMap: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.43:475][ 80]LogNet: World NetDriver shutdown IpNetDriver_8 [GameNetDriver]
+[2016.07.11-11.52.43:475][ 80]LogNet: DestroyNamedNetDriver IpNetDriver_8 [GameNetDriver]
+[2016.07.11-11.52.43:475][ 80]LogExit: GameNetDriver IpNetDriver_8 shut down
+[2016.07.11-11.52.43:487][ 80]LogMemory: Platform Memory Stats for Windows
+[2016.07.11-11.52.43:487][ 80]LogMemory: Process Physical Memory: 567.90 MB used, 587.46 MB peak
+[2016.07.11-11.52.43:487][ 80]LogMemory: Process Virtual Memory: 1254.80 MB used, 1254.80 MB peak
+[2016.07.11-11.52.43:487][ 80]LogMemory: Physical Memory: 4825.34 MB used, 16299.06 MB total
+[2016.07.11-11.52.43:487][ 80]LogMemory: Virtual Memory: 1897.30 MB used, 134217728.00 MB total
+[2016.07.11-11.52.43:487][ 80]LogMemory: 
+[2016.07.11-11.52.43:487][ 80]Allocator Stats for TBB: (not implemented)
+[2016.07.11-11.52.43:500][ 80]LogAIModule: Creating AISystem for world Menu
+[2016.07.11-11.52.43:526][ 80]LogWorld: Game class is 'GM_MPShooter_C'
+[2016.07.11-11.52.43:527][ 80]LogInit: WinSock: Socket queue 131072 / 131072
+[2016.07.11-11.52.43:527][ 80]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2016.07.11-11.52.43:527][ 80]LogNet: GameNetDriver IpNetDriver_9 IpNetDriver listening on port 7777
+[2016.07.11-11.52.43:528][ 80]LogWorld: Bringing World /Game/Levels/Menu.Menu up for play (max tick rate 0) at 2016.07.11-13.52.43
+[2016.07.11-11.52.43:528][ 80]LogWorld: Bringing up level for play took: 0.000898
+[2016.07.11-11.52.43:529][ 80]LogBlueprintUserMessages: [GM_MPShooter_C_0] Player joined
+[2016.07.11-11.52.43:530][ 80]LogLoad: Took 0.055127 seconds to LoadMap(/Game/Levels/Menu)
+[2016.07.11-11.52.43:579][ 84]LogBlueprintUserMessages: [Menu_C_1] Now listening
+[2016.07.11-11.52.43:596][ 85]LogNet: Browse: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.43:617][ 85]LogLoad: LoadMap: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.43:617][ 85]LogNet: World NetDriver shutdown IpNetDriver_9 [GameNetDriver]
+[2016.07.11-11.52.43:617][ 85]LogNet: DestroyNamedNetDriver IpNetDriver_9 [GameNetDriver]
+[2016.07.11-11.52.43:617][ 85]LogExit: GameNetDriver IpNetDriver_9 shut down
+[2016.07.11-11.52.43:629][ 85]LogMemory: Platform Memory Stats for Windows
+[2016.07.11-11.52.43:629][ 85]LogMemory: Process Physical Memory: 568.93 MB used, 587.46 MB peak
+[2016.07.11-11.52.43:629][ 85]LogMemory: Process Virtual Memory: 1256.42 MB used, 1256.42 MB peak
+[2016.07.11-11.52.43:629][ 85]LogMemory: Physical Memory: 4825.35 MB used, 16299.06 MB total
+[2016.07.11-11.52.43:629][ 85]LogMemory: Virtual Memory: 1897.30 MB used, 134217728.00 MB total
+[2016.07.11-11.52.43:629][ 85]LogMemory: 
+[2016.07.11-11.52.43:629][ 85]Allocator Stats for TBB: (not implemented)
+[2016.07.11-11.52.43:641][ 85]LogAIModule: Creating AISystem for world Menu
+[2016.07.11-11.52.43:669][ 85]LogWorld: Game class is 'GM_MPShooter_C'
+[2016.07.11-11.52.43:670][ 85]LogInit: WinSock: Socket queue 131072 / 131072
+[2016.07.11-11.52.43:670][ 85]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2016.07.11-11.52.43:670][ 85]LogNet: GameNetDriver IpNetDriver_10 IpNetDriver listening on port 7777
+[2016.07.11-11.52.43:671][ 85]LogWorld: Bringing World /Game/Levels/Menu.Menu up for play (max tick rate 0) at 2016.07.11-13.52.43
+[2016.07.11-11.52.43:671][ 85]LogWorld: Bringing up level for play took: 0.000740
+[2016.07.11-11.52.43:671][ 85]LogBlueprintUserMessages: [GM_MPShooter_C_0] Player joined
+[2016.07.11-11.52.43:672][ 85]LogLoad: Took 0.055121 seconds to LoadMap(/Game/Levels/Menu)
+[2016.07.11-11.52.43:705][ 88]LogBlueprintUserMessages: [Menu_C_1] Now listening
+[2016.07.11-11.52.43:721][ 89]LogNet: Browse: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.43:721][ 89]LogLoad: LoadMap: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.43:722][ 89]LogNet: World NetDriver shutdown IpNetDriver_10 [GameNetDriver]
+[2016.07.11-11.52.43:722][ 89]LogNet: DestroyNamedNetDriver IpNetDriver_10 [GameNetDriver]
+[2016.07.11-11.52.43:722][ 89]LogExit: GameNetDriver IpNetDriver_10 shut down
+[2016.07.11-11.52.43:734][ 89]LogMemory: Platform Memory Stats for Windows
+[2016.07.11-11.52.43:734][ 89]LogMemory: Process Physical Memory: 571.06 MB used, 587.46 MB peak
+[2016.07.11-11.52.43:734][ 89]LogMemory: Process Virtual Memory: 1257.42 MB used, 1257.42 MB peak
+[2016.07.11-11.52.43:734][ 89]LogMemory: Physical Memory: 4825.32 MB used, 16299.06 MB total
+[2016.07.11-11.52.43:734][ 89]LogMemory: Virtual Memory: 1897.30 MB used, 134217728.00 MB total
+[2016.07.11-11.52.43:734][ 89]LogMemory: 
+[2016.07.11-11.52.43:734][ 89]Allocator Stats for TBB: (not implemented)
+[2016.07.11-11.52.43:746][ 89]LogAIModule: Creating AISystem for world Menu
+[2016.07.11-11.52.43:773][ 89]LogWorld: Game class is 'GM_MPShooter_C'
+[2016.07.11-11.52.43:773][ 89]LogInit: WinSock: Socket queue 131072 / 131072
+[2016.07.11-11.52.43:773][ 89]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2016.07.11-11.52.43:773][ 89]LogNet: GameNetDriver IpNetDriver_11 IpNetDriver listening on port 7777
+[2016.07.11-11.52.43:774][ 89]LogWorld: Bringing World /Game/Levels/Menu.Menu up for play (max tick rate 0) at 2016.07.11-13.52.43
+[2016.07.11-11.52.43:775][ 89]LogWorld: Bringing up level for play took: 0.000734
+[2016.07.11-11.52.43:775][ 89]LogBlueprintUserMessages: [GM_MPShooter_C_0] Player joined
+[2016.07.11-11.52.43:776][ 89]LogLoad: Took 0.054304 seconds to LoadMap(/Game/Levels/Menu)
+[2016.07.11-11.52.43:842][ 94]LogBlueprintUserMessages: [Menu_C_1] Now listening
+[2016.07.11-11.52.43:858][ 95]LogNet: Browse: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.43:879][ 95]LogLoad: LoadMap: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.43:879][ 95]LogNet: World NetDriver shutdown IpNetDriver_11 [GameNetDriver]
+[2016.07.11-11.52.43:879][ 95]LogNet: DestroyNamedNetDriver IpNetDriver_11 [GameNetDriver]
+[2016.07.11-11.52.43:879][ 95]LogExit: GameNetDriver IpNetDriver_11 shut down
+[2016.07.11-11.52.43:891][ 95]LogMemory: Platform Memory Stats for Windows
+[2016.07.11-11.52.43:891][ 95]LogMemory: Process Physical Memory: 571.28 MB used, 587.46 MB peak
+[2016.07.11-11.52.43:891][ 95]LogMemory: Process Virtual Memory: 1257.68 MB used, 1257.68 MB peak
+[2016.07.11-11.52.43:891][ 95]LogMemory: Physical Memory: 4825.32 MB used, 16299.06 MB total
+[2016.07.11-11.52.43:891][ 95]LogMemory: Virtual Memory: 1897.30 MB used, 134217728.00 MB total
+[2016.07.11-11.52.43:891][ 95]LogMemory: 
+[2016.07.11-11.52.43:891][ 95]Allocator Stats for TBB: (not implemented)
+[2016.07.11-11.52.43:903][ 95]LogAIModule: Creating AISystem for world Menu
+[2016.07.11-11.52.43:930][ 95]LogWorld: Game class is 'GM_MPShooter_C'
+[2016.07.11-11.52.43:930][ 95]LogInit: WinSock: Socket queue 131072 / 131072
+[2016.07.11-11.52.43:930][ 95]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2016.07.11-11.52.43:930][ 95]LogNet: GameNetDriver IpNetDriver_12 IpNetDriver listening on port 7777
+[2016.07.11-11.52.43:931][ 95]LogWorld: Bringing World /Game/Levels/Menu.Menu up for play (max tick rate 0) at 2016.07.11-13.52.43
+[2016.07.11-11.52.43:931][ 95]LogWorld: Bringing up level for play took: 0.000775
+[2016.07.11-11.52.43:932][ 95]LogBlueprintUserMessages: [GM_MPShooter_C_0] Player joined
+[2016.07.11-11.52.43:932][ 95]LogLoad: Took 0.053549 seconds to LoadMap(/Game/Levels/Menu)
+[2016.07.11-11.52.43:983][ 99]LogBlueprintUserMessages: [Menu_C_1] Now listening
+[2016.07.11-11.52.43:998][100]LogNet: Browse: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.44:020][100]LogLoad: LoadMap: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.44:020][100]LogNet: World NetDriver shutdown IpNetDriver_12 [GameNetDriver]
+[2016.07.11-11.52.44:020][100]LogNet: DestroyNamedNetDriver IpNetDriver_12 [GameNetDriver]
+[2016.07.11-11.52.44:020][100]LogExit: GameNetDriver IpNetDriver_12 shut down
+[2016.07.11-11.52.44:032][100]LogMemory: Platform Memory Stats for Windows
+[2016.07.11-11.52.44:032][100]LogMemory: Process Physical Memory: 571.29 MB used, 587.46 MB peak
+[2016.07.11-11.52.44:032][100]LogMemory: Process Virtual Memory: 1257.68 MB used, 1257.68 MB peak
+[2016.07.11-11.52.44:032][100]LogMemory: Physical Memory: 4825.32 MB used, 16299.06 MB total
+[2016.07.11-11.52.44:032][100]LogMemory: Virtual Memory: 1897.30 MB used, 134217728.00 MB total
+[2016.07.11-11.52.44:032][100]LogMemory: 
+[2016.07.11-11.52.44:032][100]Allocator Stats for TBB: (not implemented)
+[2016.07.11-11.52.44:044][100]LogAIModule: Creating AISystem for world Menu
+[2016.07.11-11.52.44:071][100]LogWorld: Game class is 'GM_MPShooter_C'
+[2016.07.11-11.52.44:071][100]LogInit: WinSock: Socket queue 131072 / 131072
+[2016.07.11-11.52.44:071][100]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2016.07.11-11.52.44:071][100]LogNet: GameNetDriver IpNetDriver_13 IpNetDriver listening on port 7777
+[2016.07.11-11.52.44:072][100]LogWorld: Bringing World /Game/Levels/Menu.Menu up for play (max tick rate 0) at 2016.07.11-13.52.44
+[2016.07.11-11.52.44:072][100]LogWorld: Bringing up level for play took: 0.000747
+[2016.07.11-11.52.44:073][100]LogBlueprintUserMessages: [GM_MPShooter_C_0] Player joined
+[2016.07.11-11.52.44:073][100]LogLoad: Took 0.054052 seconds to LoadMap(/Game/Levels/Menu)
+[2016.07.11-11.52.44:268][113]LogBlueprintUserMessages: [Menu_C_1] Now listening
+[2016.07.11-11.52.44:284][114]LogNet: Browse: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.44:284][114]LogLoad: LoadMap: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.44:284][114]LogNet: World NetDriver shutdown IpNetDriver_13 [GameNetDriver]
+[2016.07.11-11.52.44:284][114]LogNet: DestroyNamedNetDriver IpNetDriver_13 [GameNetDriver]
+[2016.07.11-11.52.44:284][114]LogExit: GameNetDriver IpNetDriver_13 shut down
+[2016.07.11-11.52.44:297][114]LogMemory: Platform Memory Stats for Windows
+[2016.07.11-11.52.44:297][114]LogMemory: Process Physical Memory: 571.42 MB used, 587.46 MB peak
+[2016.07.11-11.52.44:297][114]LogMemory: Process Virtual Memory: 1257.81 MB used, 1257.81 MB peak
+[2016.07.11-11.52.44:297][114]LogMemory: Physical Memory: 4825.32 MB used, 16299.06 MB total
+[2016.07.11-11.52.44:297][114]LogMemory: Virtual Memory: 1897.30 MB used, 134217728.00 MB total
+[2016.07.11-11.52.44:297][114]LogMemory: 
+[2016.07.11-11.52.44:297][114]Allocator Stats for TBB: (not implemented)
+[2016.07.11-11.52.44:308][114]LogAIModule: Creating AISystem for world Menu
+[2016.07.11-11.52.44:336][114]LogWorld: Game class is 'GM_MPShooter_C'
+[2016.07.11-11.52.44:336][114]LogInit: WinSock: Socket queue 131072 / 131072
+[2016.07.11-11.52.44:336][114]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2016.07.11-11.52.44:336][114]LogNet: GameNetDriver IpNetDriver_14 IpNetDriver listening on port 7777
+[2016.07.11-11.52.44:337][114]LogWorld: Bringing World /Game/Levels/Menu.Menu up for play (max tick rate 0) at 2016.07.11-13.52.44
+[2016.07.11-11.52.44:337][114]LogWorld: Bringing up level for play took: 0.000807
+[2016.07.11-11.52.44:338][114]LogBlueprintUserMessages: [GM_MPShooter_C_0] Player joined
+[2016.07.11-11.52.44:338][114]LogLoad: Took 0.053807 seconds to LoadMap(/Game/Levels/Menu)
+[2016.07.11-11.52.44:646][134]LogBlueprintUserMessages: [Menu_C_1] Now listening
+[2016.07.11-11.52.44:662][135]LogNet: Browse: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.44:662][135]LogLoad: LoadMap: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.44:662][135]LogNet: World NetDriver shutdown IpNetDriver_14 [GameNetDriver]
+[2016.07.11-11.52.44:662][135]LogNet: DestroyNamedNetDriver IpNetDriver_14 [GameNetDriver]
+[2016.07.11-11.52.44:662][135]LogExit: GameNetDriver IpNetDriver_14 shut down
+[2016.07.11-11.52.44:674][135]LogMemory: Platform Memory Stats for Windows
+[2016.07.11-11.52.44:674][135]LogMemory: Process Physical Memory: 571.42 MB used, 587.46 MB peak
+[2016.07.11-11.52.44:674][135]LogMemory: Process Virtual Memory: 1257.81 MB used, 1257.81 MB peak
+[2016.07.11-11.52.44:674][135]LogMemory: Physical Memory: 4825.30 MB used, 16299.06 MB total
+[2016.07.11-11.52.44:674][135]LogMemory: Virtual Memory: 1897.30 MB used, 134217728.00 MB total
+[2016.07.11-11.52.44:674][135]LogMemory: 
+[2016.07.11-11.52.44:674][135]Allocator Stats for TBB: (not implemented)
+[2016.07.11-11.52.44:686][135]LogAIModule: Creating AISystem for world Menu
+[2016.07.11-11.52.44:713][135]LogWorld: Game class is 'GM_MPShooter_C'
+[2016.07.11-11.52.44:713][135]LogInit: WinSock: Socket queue 131072 / 131072
+[2016.07.11-11.52.44:714][135]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2016.07.11-11.52.44:714][135]LogNet: GameNetDriver IpNetDriver_15 IpNetDriver listening on port 7777
+[2016.07.11-11.52.44:715][135]LogWorld: Bringing World /Game/Levels/Menu.Menu up for play (max tick rate 0) at 2016.07.11-13.52.44
+[2016.07.11-11.52.44:715][135]LogWorld: Bringing up level for play took: 0.000760
+[2016.07.11-11.52.44:715][135]LogBlueprintUserMessages: [GM_MPShooter_C_0] Player joined
+[2016.07.11-11.52.44:716][135]LogLoad: Took 0.053459 seconds to LoadMap(/Game/Levels/Menu)
+[2016.07.11-11.52.44:798][141]LogBlueprintUserMessages: [Menu_C_1] Now listening
+[2016.07.11-11.52.44:814][142]LogNet: Browse: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.44:834][142]LogLoad: LoadMap: /Game/Levels/Menu?Name=Player?Listen
+[2016.07.11-11.52.44:834][142]LogNet: World NetDriver shutdown IpNetDriver_15 [GameNetDriver]
+[2016.07.11-11.52.44:834][142]LogNet: DestroyNamedNetDriver IpNetDriver_15 [GameNetDriver]
+[2016.07.11-11.52.44:834][142]LogExit: GameNetDriver IpNetDriver_15 shut down
+[2016.07.11-11.52.44:846][142]LogMemory: Platform Memory Stats for Windows
+[2016.07.11-11.52.44:846][142]LogMemory: Process Physical Memory: 571.43 MB used, 587.46 MB peak
+[2016.07.11-11.52.44:846][142]LogMemory: Process Virtual Memory: 1289.38 MB used, 1289.38 MB peak
+[2016.07.11-11.52.44:846][142]LogMemory: Physical Memory: 4825.35 MB used, 16299.06 MB total
+[2016.07.11-11.52.44:846][142]LogMemory: Virtual Memory: 1928.80 MB used, 134217728.00 MB total
+[2016.07.11-11.52.44:846][142]LogMemory: 
+[2016.07.11-11.52.44:846][142]Allocator Stats for TBB: (not implemented)
+[2016.07.11-11.52.44:858][142]LogAIModule: Creating AISystem for world Menu
+[2016.07.11-11.52.44:884][142]LogWorld: Game class is 'GM_MPShooter_C'
+[2016.07.11-11.52.44:884][142]LogInit: WinSock: Socket queue 131072 / 131072
+[2016.07.11-11.52.44:885][142]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2016.07.11-11.52.44:885][142]LogNet: GameNetDriver IpNetDriver_16 IpNetDriver listening on port 7777
+[2016.07.11-11.52.44:886][142]LogWorld: Bringing World /Game/Levels/Menu.Menu up for play (max tick rate 0) at 2016.07.11-13.52.44
+[2016.07.11-11.52.44:886][142]LogWorld: Bringing up level for play took: 0.000816
+[2016.07.11-11.52.44:886][142]LogBlueprintUserMessages: [GM_MPShooter_C_0] Player joined
+[2016.07.11-11.52.44:887][142]LogLoad: Took 0.052940 seconds to LoadMap(/Game/Levels/Menu)
+[2016.07.11-11.52.49:846][449]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.07.11-11.52.49:848][449]LogEngine: All Windows Closed
+[2016.07.11-11.52.49:848][449]LogWindows: FPlatformMisc::RequestExit(0)
+[2016.07.11-11.52.49:848][450]LogMoviePlayer: Shutting down movie player
+[2016.07.11-11.52.49:973][450]LogNet: World NetDriver shutdown IpNetDriver_16 [GameNetDriver]
+[2016.07.11-11.52.49:973][450]LogNet: DestroyNamedNetDriver IpNetDriver_16 [GameNetDriver]
+[2016.07.11-11.52.49:973][450]LogExit: GameNetDriver IpNetDriver_16 shut down
+[2016.07.11-11.52.49:989][450]LogExit: Preparing to exit.
+[2016.07.11-11.52.50:060][450]LogExit: Game engine shut down
+[2016.07.11-11.52.50:115][450]LogObj: Freed 0b from 0 cluster array pools.
+[2016.07.11-11.52.50:115][450]LogExit: Object subsystem successfully closed.
+[2016.07.11-11.52.50:128][450]LogD3D11RHI: Shutdown
+[2016.07.11-11.52.50:128][450]LogD3D11RHI: CleanupD3DDevice
+[2016.07.11-11.52.50:151][450]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.07.11-11.52.50:155][450]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (112)
+[2016.07.11-11.52.50:155][450]LogModuleManager: Shutting down and abandoning module SequenceRecorder (111)
+[2016.07.11-11.52.50:155][450]LogModuleManager: Shutting down and abandoning module AutomationController (110)
+[2016.07.11-11.52.50:155][450]LogModuleManager: Shutting down and abandoning module AutomationWorker (109)
+[2016.07.11-11.52.50:155][450]LogModuleManager: Shutting down and abandoning module CharacterAI (108)
+[2016.07.11-11.52.50:155][450]LogModuleManager: Shutting down and abandoning module SessionServices (107)
+[2016.07.11-11.52.50:155][450]LogModuleManager: Shutting down and abandoning module GameplayDebugger (106)
+[2016.07.11-11.52.50:155][450]LogModuleManager: Shutting down and abandoning module AITestSuite (105)
+[2016.07.11-11.52.50:155][450]LogModuleManager: Shutting down and abandoning module AIModule (104)
+[2016.07.11-11.52.50:155][450]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (103)
+[2016.07.11-11.52.50:155][450]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (102)
+[2016.07.11-11.52.50:155][450]LogModuleManager: Shutting down and abandoning module PortalServices (101)
+[2016.07.11-11.52.50:155][450]LogModuleManager: Shutting down and abandoning module PortalRpc (100)
+[2016.07.11-11.52.50:155][450]LogModuleManager: Shutting down and abandoning module MessagingRpc (99)
+[2016.07.11-11.52.50:155][450]LogModuleManager: Shutting down and abandoning module ProfilerService (98)
+[2016.07.11-11.52.50:184][450]LogModuleManager: Shutting down and abandoning module TaskGraph (97)
+[2016.07.11-11.52.50:184][450]LogModuleManager: Shutting down and abandoning module SlateRemote (96)
+[2016.07.11-11.52.50:184][450]LogModuleManager: Shutting down and abandoning module SteamVRController (95)
+[2016.07.11-11.52.50:184][450]LogModuleManager: Shutting down and abandoning module SteamVR (94)
+[2016.07.11-11.52.50:184][450]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (93)
+[2016.07.11-11.52.50:184][450]LogModuleManager: Shutting down and abandoning module OculusLibrary (92)
+[2016.07.11-11.52.50:184][450]LogModuleManager: Shutting down and abandoning module OculusInput (91)
+[2016.07.11-11.52.50:184][450]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (90)
+[2016.07.11-11.52.50:184][450]LogModuleManager: Shutting down and abandoning module CableComponent (89)
+[2016.07.11-11.52.50:184][450]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (88)
+[2016.07.11-11.52.50:184][450]LogModuleManager: Shutting down and abandoning module HTML5Networking (87)
+[2016.07.11-11.52.50:184][450]LogModuleManager: Shutting down and abandoning module DesktopPlatform (86)
+[2016.07.11-11.52.50:184][450]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (85)
+[2016.07.11-11.52.50:184][450]LogModuleManager: Shutting down and abandoning module HotReload (84)
+[2016.07.11-11.52.50:184][450]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (83)
+[2016.07.11-11.52.50:184][450]LogModuleManager: Shutting down and abandoning module UObjectPlugin (82)
+[2016.07.11-11.52.50:185][450]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (81)
+[2016.07.11-11.52.50:185][450]LogModuleManager: Shutting down and abandoning module SourceControl (80)
+[2016.07.11-11.52.50:185][450]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (79)
+[2016.07.11-11.52.50:185][450]LogModuleManager: Shutting down and abandoning module UdpMessaging (78)
+[2016.07.11-11.52.50:185][450]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (77)
+[2016.07.11-11.52.50:185][450]LogModuleManager: Shutting down and abandoning module Paper2D (76)
+[2016.07.11-11.52.50:185][450]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (75)
+[2016.07.11-11.52.50:185][450]LogModuleManager: Shutting down and abandoning module Media (74)
+[2016.07.11-11.52.50:185][450]LogModuleManager: Shutting down and abandoning module WmfMedia (73)
+[2016.07.11-11.52.50:185][450]LogModuleManager: Shutting down and abandoning module MediaAssets (72)
+[2016.07.11-11.52.50:185][450]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (71)
+[2016.07.11-11.52.50:185][450]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (70)
+[2016.07.11-11.52.50:185][450]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (69)
+[2016.07.11-11.52.50:185][450]LogModuleManager: Shutting down and abandoning module VREditor (68)
+[2016.07.11-11.52.50:185][450]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (67)
+[2016.07.11-11.52.50:185][450]LogModuleManager: Shutting down and abandoning module PropertyEditor (66)
+[2016.07.11-11.52.50:185][450]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (65)
+[2016.07.11-11.52.50:185][450]LogModuleManager: Shutting down and abandoning module FunctionalTesting (64)
+[2016.07.11-11.52.50:185][450]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (63)
+[2016.07.11-11.52.50:185][450]LogModuleManager: Shutting down and abandoning module Sequencer (62)
+[2016.07.11-11.52.50:185][450]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (61)
+[2016.07.11-11.52.50:185][450]LogModuleManager: Shutting down and abandoning module MessageLog (60)
+[2016.07.11-11.52.50:185][450]LogModuleManager: Shutting down and abandoning module AssetTools (59)
+[2016.07.11-11.52.50:185][450]LogModuleManager: Shutting down and abandoning module UMGEditor (58)
+[2016.07.11-11.52.50:185][450]LogModuleManager: Shutting down and abandoning module UMG (57)
+[2016.07.11-11.52.50:185][450]LogModuleManager: Shutting down and abandoning module SlateReflector (56)
+[2016.07.11-11.52.50:185][450]LogModuleManager: Shutting down and abandoning module Slate (55)
+[2016.07.11-11.52.50:185][450]LogModuleManager: Shutting down and abandoning module EditorStyle (54)
+[2016.07.11-11.52.50:186][450]LogModuleManager: Shutting down and abandoning module Messaging (53)
+[2016.07.11-11.52.50:186][450]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (52)
+[2016.07.11-11.52.50:186][450]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (51)
+[2016.07.11-11.52.50:186][450]LogModuleManager: Shutting down and abandoning module XAudio2 (50)
+[2016.07.11-11.52.50:186][450]LogModuleManager: Shutting down and abandoning module Networking (48)
+[2016.07.11-11.52.50:186][450]LogModuleManager: Shutting down and abandoning module Core (47)
+[2016.07.11-11.52.50:186][450]LogModuleManager: Shutting down and abandoning module KismetCompiler (46)
+[2016.07.11-11.52.50:186][450]LogModuleManager: Shutting down and abandoning module PhysXFormats (45)
+[2016.07.11-11.52.50:186][450]LogModuleManager: Shutting down and abandoning module MeshUtilities (44)
+[2016.07.11-11.52.50:186][450]LogModuleManager: Shutting down and abandoning module AssetRegistry (43)
+[2016.07.11-11.52.50:186][450]LogModuleManager: Shutting down and abandoning module DerivedDataCache (42)
+[2016.07.11-11.52.50:248][450]LogDerivedDataCache: Shutdown
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (41)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (40)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (39)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (38)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (37)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (36)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (35)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (34)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module ImageWrapper (33)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (32)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (31)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (30)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (29)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (28)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (27)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (26)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (25)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (24)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.07.11-11.52.50:248][450]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.07.11-11.52.50:249][450]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.07.11-11.52.50:249][450]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.07.11-11.52.50:249][450]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.07.11-11.52.50:249][450]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.07.11-11.52.50:249][450]LogExit: Exiting.
+[2016.07.11-11.52.50:251][450]Log file closed, 07/11/16 13:52:50
